@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Alifsanda Najwa Firdaus — AI Researcher & Lifelong Learner</title>
+  <meta name="description"
+    content="Portfolio of Alifsanda Najwa Firdaus — AI Researcher and Lifelong Learner. Exploring the frontier of artificial intelligence, machine learning, and research." />
+  <meta name="keywords" content="AI Researcher, Machine Learning, Deep Learning, Portfolio, Alifsanda Najwa Firdaus" />
+  <meta name="author" content="Alifsanda Najwa Firdaus" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alifsanda Najwa Firdaus — AI Researcher" />
+  <meta property="og:description"
+    content="Portfolio of Alifsanda Najwa Firdaus — AI Researcher and Lifelong Learner." />
+  <meta property="og:type" content="website" />
+
+  <!-- Design System CSS (order matters) -->
+  <link rel="stylesheet" href="style/tokens.css" />
+  <link rel="stylesheet" href="style/reset.css" />
+  <link rel="stylesheet" href="style/components.css" />
+  <link rel="stylesheet" href="style/main.css" />
+
+  <!-- Hero entrance animation -->
+  <style>
+    .hero__entrance {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 1s ease 0.3s, transform 1s ease 0.3s;
+    }
+
+    .hero__entrance.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVIGATION — nav-bar-overlay
+       Fixed transparent overlay, collapses to hamburger < 768px
+  ============================================================ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav__logo" aria-label="Home">Alifsanda Najwa Firdaus</a>
+
+    <!-- Desktop links -->
+    <ul class="nav__links" role="list">
+      <li><a class="nav__link" href="#about" data-section="about" aria-label="About section">About</a></li>
+      <li><a class="nav__link" href="#skills" data-section="skills" aria-label="Skills section">Skills</a></li>
+      <li><a class="nav__link" href="#projects" data-section="projects" aria-label="Projects section">Projects</a></li>
+      <li><a class="nav__link" href="#contact" data-section="contact" aria-label="Contact section">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger (mobile) -->
+    <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false"
+      aria-controls="nav-drawer">
+      <span class="nav__hamburger-line"></span>
+      <span class="nav__hamburger-line"></span>
+      <span class="nav__hamburger-line"></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="nav__drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <a class="nav__drawer-link" href="#about" id="drawer-about">About</a>
+    <a class="nav__drawer-link" href="#skills" id="drawer-skills">Skills</a>
+    <a class="nav__drawer-link" href="#projects" id="drawer-projects">Projects</a>
+    <a class="nav__drawer-link" href="#contact" id="drawer-contact">Contact</a>
+  </div>
+
+
+  <!-- ============================================================
+       HERO — Full-bleed photo band
+       display-xxl · ghost pill CTA · scroll hint
+  ============================================================ -->
+  <section id="hero" class="band band--photo" aria-label="Hero section">
+    <div class="band__bg" role="img" aria-label="Dramatic mountain night sky background"></div>
+
+    <div class="band__content">
+      <div class="hero__entrance" id="hero-content">
+
+        <p class="hero__eyebrow micro-cap">Portfolio · 2026</p>
+
+        <h1 class="hero__name">
+          im the cook<br />
+          say my name
+        </h1>
+
+        <div class="hero__roles">
+          <span class="hero__role">AI Researcher</span>
+          <span class="hero__role-sep" aria-hidden="true"></span>
+          <span class="hero__role">Lifelong Learner</span>
+        </div>
+
+        <a href="#projects" class="btn-ghost-dark" id="hero-cta" aria-label="Explore my work">
+          Explore My Work
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <!-- <div class="hero__scroll-hint" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+      <span class="micro-cap">Scroll</span>
+    </div> -->
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT — Full-bleed photo band
+       Split layout: text left, photo placeholder right
+  ============================================================ -->
+  <section id="about" class="band band--photo" aria-label="About section">
+    <div class="band__bg" role="img" aria-label="Dark desk workspace with dramatic lighting"></div>
+
+    <div class="band__content">
+      <div class="about__inner">
+
+        <!-- Left: Text -->
+        <div class="about__left reveal">
+          <div>
+            <p class="about__eyebrow micro-cap">01 — About Me</p>
+          </div>
+
+          <h2 class="about__heading">Who I Am</h2>
+
+          <p class="about__bio">
+            <!--
+              ═══════════════════════════════════
+              PLACEHOLDER — Isi biografi kamu di sini.
+              Contoh:
+              "Saya adalah seorang peneliti AI yang bersemangat
+              dalam mengeksplorasi batas-batas kecerdasan buatan.
+              Dengan latar belakang di machine learning dan NLP,
+              saya percaya bahwa AI akan mengubah cara manusia
+              memahami dunia."
+              ═══════════════════════════════════
+            -->
+            An Informatics student who is always curious about learning new things and enjoys taking on challenges that
+            encourage continuous growth. Passionate about technology, especially Artificial Intelligence (AI), with a
+            strong interest in exploring how AI can be used to solve real-world problems.
+
+          </p>
+
+          <a href="#" class="btn-ghost-dark" id="about-cv-btn" aria-label="Download CV">
+            Download CV
+            <span class="btn-arrow" aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <!-- Right: Photo placeholder -->
+        <!-- <div class="about__photo-wrap reveal">
+            Ganti src di bawah dengan path foto kamu setelah di-upload.
+            Contoh: src="asset/foto-saya.jpg"
+          -->
+        <!-- <img src="asset/foto_poto_gw.jpg" alt="Alifsanda Najwa Firdaus" />
+      </div> -->
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SKILLS — Dark canvas section
+       Category rows with skill tags
+  ============================================================ -->
+  <section id="skills" aria-label="Skills section">
+    <div class="skills__inner">
+
+      <!-- Header -->
+      <div class="skills__header reveal">
+        <div>
+          <p class="skills__eyebrow micro-cap">02 — Expertise</p>
+          <h2 class="skills__heading">Skills</h2>
+        </div>
+        <span class="skills__count" aria-hidden="true">—</span>
+      </div>
+
+      <!-- Categories -->
+      <div class="skills__grid reveal-stagger">
+
+        <!-- Category: AI & Machine Learning -->
+        <div class="skills__category">
+          <span class="skills__cat-label">AI / ML</span>
+          <div class="skills__tags">
+            <!-- PLACEHOLDER — Tambah atau hapus skill tag sesuai keahlianmu -->
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">Natural Language Processing</span>
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">Reinforcement Learning</span>
+            <span class="skill-tag">Generative AI</span>
+          </div>
+        </div>
+
+        <!-- Category: Frameworks & Tools -->
+        <div class="skills__category">
+          <span class="skills__cat-label">Frameworks</span>
+          <div class="skills__tags">
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Hugging Face</span>
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+          </div>
+        </div>
+
+        <!-- Category: Programming -->
+        <div class="skills__category">
+          <span class="skills__cat-label">Programming</span>
+          <div class="skills__tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">R</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Bash</span>
+          </div>
+        </div>
+
+        <!-- Category: Research -->
+        <div class="skills__category">
+          <span class="skills__cat-label">Research</span>
+          <div class="skills__tags">
+            <span class="skill-tag">Academic Writing</span>
+            <span class="skill-tag">Literature Review</span>
+            <span class="skill-tag">Experimental Design</span>
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">Statistical Modeling</span>
+          </div>
+        </div>
+
+        <!-- Category: Other -->
+        <div class="skills__category">
+          <span class="skills__cat-label">Other</span>
+          <div class="skills__tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Jupyter</span>
+            <span class="skill-tag">LaTeX</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PROJECTS — Full-bleed photo band
+       Mission-list style project entries
+  ============================================================ -->
+  <section id="projects" class="band band--photo" aria-label="Projects section">
+    <div class="band__bg" role="img" aria-label="Abstract neural network visualization on black background"></div>
+
+    <div class="projects__inner">
+
+      <div class="projects__header reveal">
+        <p class="projects__eyebrow micro-cap">03 — Portfolio</p>
+        <h2 class="projects__heading">Projects</h2>
+      </div>
+
+      <!-- Project List -->
+      <div class="projects__list reveal-stagger">
+
+        <!--
+          ═══════════════════════════════════════════════
+          PLACEHOLDER PROJECT 01
+          Ganti teks di bawah dengan detail proyekmu.
+          ═══════════════════════════════════════════════
+        -->
+        <article class="project-card" id="project-01">
+          <span class="project-card__number micro-cap">01</span>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Custom MCP servers</h3>
+            <p class="project-card__desc">
+              Project ini adalah hasil percobaan membuat AI dapat menggunakan tools melalui MCP server.
+            </p>
+            <div class="project-card__tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">NLP</span>
+            </div>
+          </div>
+          <div class="project-card__cta">
+            <!-- Ganti href="#" dengan link proyek / GitHub -->
+            <a href="#" class="btn-ghost-dark" id="project-01-link" target="_blank" rel="noopener">
+              View
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!--
+          ═══════════════════════════════════════════════
+          PLACEHOLDER PROJECT 02
+          ═══════════════════════════════════════════════
+        -->
+        <article class="project-card" id="project-02">
+          <span class="project-card__number micro-cap">02</span>
+          <div class="project-card__body">
+            <h3 class="project-card__title">parking lot detection</h3>
+            <p class="project-card__desc">
+              Parking lot detection adalah project computer vision dan deep learning untuk mendeteksi slot parkir, Hasil
+              model dapat dikembangkan lebih lanjut untuk akurasi yang lebih baik dengan dataset yang lebih beragam.
+            </p>
+            <div class="project-card__tags">
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">Computer Vision</span>
+            </div>
+          </div>
+          <div class="project-card__cta">
+            <a href="#" class="btn-ghost-dark" id="project-02-link" target="_blank" rel="noopener">
+              View
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!--
+          ═══════════════════════════════════════════════
+          PLACEHOLDER PROJECT 03
+          ═══════════════════════════════════════════════
+        -->
+        <article class="project-card" id="project-03">
+          <span class="project-card__number micro-cap">03</span>
+          <div class="project-card__body">
+            <h3 class="project-card__title">When yhh project lagi</h3>
+            <p class="project-card__desc">
+              lagi fokus kulyeah dulu uyy
+            </p>
+            <div class="project-card__tags">
+              <!-- <span class="skill-tag">Research</span>
+              <span class="skill-tag">Data Analysis</span> -->
+            </div>
+          </div>
+          <div class="project-card__cta">
+            <a href="#" class="btn-ghost-dark" id="project-03-link" target="_blank" rel="noopener">
+              View
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+      <!-- end projects__list -->
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT — Dark canvas section
+       GitHub · Email · LinkedIn
+  ============================================================ -->
+  <section id="contact" aria-label="Contact section">
+    <div class="contact__inner">
+
+      <!-- Header -->
+      <div class="contact__header reveal">
+        <div>
+          <p class="contact__eyebrow micro-cap">04 — Contact</p>
+          <h2 class="contact__heading">Get In Touch</h2>
+        </div>
+        <p class="contact__lead body-md">
+          Open for collaboration, research opportunities, and interesting conversations.
+        </p>
+      </div>
+
+      <!-- Contact links -->
+      <div class="contact__links reveal-stagger">
+
+        <!-- GitHub -->
+        <a class="contact-link" id="contact-github" href="https://github.com/Firdausizm" target="_blank"
+          rel="noopener noreferrer" aria-label="GitHub profile">
+          <span class="contact-link__icon" aria-hidden="true">
+            <!-- GitHub SVG icon -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+            </svg>
+          </span>
+          <div>
+            <p class="contact-link__label">GitHub</p>
+            <!-- Ganti URL di href dan teks di bawah dengan username GitHub kamu -->
+            <p class="contact-link__sub">github.com/Firdausizm</p>
+          </div>
+          <span class="contact-link__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <!-- Email -->
+        <a class="contact-link" id="contact-email" href="mailto:alifsandafirdausi@email.com" aria-label="Send email">
+          <span class="contact-link__icon" aria-hidden="true">
+            <!-- Email SVG icon -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+          </span>
+          <div>
+            <p class="contact-link__label">Email</p>
+            <!-- Ganti dengan email kamu -->
+            <p class="contact-link__sub">alifsandafirdausi@email.com</p>
+          </div>
+          <span class="contact-link__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a class="contact-link" id="contact-linkedin" href="https://linkedin.com/in/alifsanda-najwa-firdaus"
+          target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <span class="contact-link__icon" aria-hidden="true">
+            <!-- LinkedIn SVG icon -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </span>
+          <div>
+            <p class="contact-link__label">LinkedIn</p>
+            <!-- Ganti dengan username LinkedIn kamu -->
+            <p class="contact-link__sub">linkedin.com/in/alifsanda-najwa-firdaus</p>
+          </div>
+          <span class="contact-link__arrow" aria-hidden="true">→</span>
+        </a>
+
+      </div>
+      <!-- end contact__links -->
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER — footer-dark
+  ============================================================ -->
+  <footer class="footer" role="contentinfo" aria-label="Site footer">
+    <div class="footer__inner">
+
+      <!-- Brand col -->
+      <div class="footer__brand">
+        <span class="footer__brand-name">Alifsanda Najwa Firdaus</span>
+        <p class="footer__brand-tagline">AI Researcher · Lifelong Learner</p>
+      </div>
+
+      <!-- Navigation col -->
+      <nav aria-label="Footer navigation">
+        <p class="footer__col-title">Navigation</p>
+        <ul class="footer__col-links" role="list">
+          <li><a class="footer__col-link" href="#hero" id="footer-home">Home</a></li>
+          <li><a class="footer__col-link" href="#about" id="footer-about">About</a></li>
+          <li><a class="footer__col-link" href="#skills" id="footer-skills">Skills</a></li>
+          <li><a class="footer__col-link" href="#projects" id="footer-projects">Projects</a></li>
+          <li><a class="footer__col-link" href="#contact" id="footer-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Connect col -->
+      <nav aria-label="Social links">
+        <p class="footer__col-title">Connect</p>
+        <ul class="footer__col-links" role="list">
+          <!-- Ganti href dengan link akun kamu -->
+          <li><a class="footer__col-link" href="https://github.com/" id="footer-github" target="_blank"
+              rel="noopener">GitHub</a></li>
+          <li><a class="footer__col-link" href="mailto:kamu@email.com" id="footer-email">Email</a></li>
+          <li><a class="footer__col-link" href="https://linkedin.com/in/" id="footer-linkedin" target="_blank"
+              rel="noopener">LinkedIn</a></li>
+        </ul>
+      </nav>
+
+      <!-- Research col -->
+      <div>
+        <p class="footer__col-title">Research</p>
+        <ul class="footer__col-links" role="list">
+          <li><a class="footer__col-link" href="#projects" id="footer-research-projects">Projects</a></li>
+          <!-- Tambahkan link publikasi / paper jika ada -->
+          <li><a class="footer__col-link" href="#" id="footer-publications">Publications</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Copyright row -->
+    <div class="footer__bottom">
+      <p class="footer__copyright caption">
+        &copy; <span id="footer-year"></span> Alifsanda Najwa Firdaus. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <script src="script/main.js"></script>
+
+  <!-- Dynamic year in footer -->
+  <script>
+    const yearEl = document.getElementById('footer-year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+/* ============================================================
+   DESIGN TOKENS — Spasex Design Language
+   Source: DESIGN.md (Spasex-design-analysis v.alpha)
+   ============================================================ */
+
+:root {
+
+   /* -----------------------------------------------------------
+     COLORS
+  ----------------------------------------------------------- */
+   --color-canvas-night: #000000;
+   --color-canvas-night-soft: #0a0a0a;
+   --color-canvas-light: #ffffff;
+   --color-canvas-cool: #f0f0fa;
+   --color-hairline-dark: #3a3a3f;
+   --color-hairline-light: #e0e0e8;
+   --color-on-primary: #ffffff;
+   --color-on-primary-mute: #f0f0fa;
+   --color-ink: #000000;
+   --color-ink-mute: #5a5a5f;
+   --color-link-dark: #ffffff;
+   --color-link-blue-fallback: #0000ee;
+
+   /* -----------------------------------------------------------
+     TYPOGRAPHY — Font Families
+  ----------------------------------------------------------- */
+   --font-display: 'Barlow Condensed', 'Arial Narrow', Arial, Verdana, sans-serif;
+   --font-body: 'Inter', Arial, Verdana, sans-serif;
+
+   /* -----------------------------------------------------------
+     TYPOGRAPHY — display-xxl
+  ----------------------------------------------------------- */
+   --type-display-xxl-size: 80px;
+   --type-display-xxl-weight: 700;
+   --type-display-xxl-lh: 0.95;
+   --type-display-xxl-ls: 1.6px;
+
+   /* -----------------------------------------------------------
+     TYPOGRAPHY — display-xl
+  ----------------------------------------------------------- */
+   --type-display-xl-size: 60px;
+   --type-display-xl-weight: 700;
+   --type-display-xl-lh: 1.2;
+   --type-display-xl-ls: 1.2px;
+
+   /* -----------------------------------------------------------
+     TYPOGRAPHY — display-lg
+  ----------------------------------------------------------- */
+   --type-display-lg-size: 48px;
+   --type-display-lg-weight: 700;
+   --type-display-lg-lh: 1.25;
+   --type-display-lg-ls: 0.96px;
+
+   /* -----------------------------------------------------------
+     TYPOGRAPHY — body-lg
+  ----------------------------------------------------------- */
+   --type-body-lg-size: 16px;
+   --type-body-lg-weight: 400;
+   --type-body-lg-lh: 1.7;
+   --type-body-lg-ls: 0.32px;
+
+   /* -----------------------------------------------------------
+     TYPOGRAPHY — body-md
+  ----------------------------------------------------------- */
+   --type-body-md-size: 16px;
+   --type-body-md-weight: 400;
+   --type-body-md-lh: 1.5;
+   --type-body-md-ls: 0.32px;
+
+   /* -----------------------------------------------------------
+     TYPOGRAPHY — button-cap
+  ----------------------------------------------------------- */
+   --type-btn-size: 13.008px;
+   --type-btn-weight: 700;
+   --type-btn-lh: 0.94;
+   --type-btn-ls: 1.17px;
+
+   /* -----------------------------------------------------------
+     TYPOGRAPHY — micro-cap
+  ----------------------------------------------------------- */
+   --type-micro-size: 12px;
+   --type-micro-weight: 400;
+   --type-micro-lh: 2.0;
+   --type-micro-ls: 0.96px;
+
+   /* -----------------------------------------------------------
+     TYPOGRAPHY — caption
+  ----------------------------------------------------------- */
+   --type-caption-size: 13.008px;
+   --type-caption-weight: 400;
+   --type-caption-lh: 1.5;
+   --type-caption-ls: 0px;
+
+   /* -----------------------------------------------------------
+     SPACING
+  ----------------------------------------------------------- */
+   --sp-xxs: 4px;
+   --sp-xs: 8px;
+   --sp-sm: 12px;
+   --sp-md: 16px;
+   --sp-lg: 18px;
+   --sp-xl: 24px;
+   --sp-xxl: 32px;
+   --sp-huge: 48px;
+
+   /* -----------------------------------------------------------
+     BORDER RADIUS
+  ----------------------------------------------------------- */
+   --r-xs: 4px;
+   --r-sm: 8px;
+   --r-md: 16px;
+   --r-pill: 32px;
+   --r-full: 9999px;
+
+   /* -----------------------------------------------------------
+     TRANSITIONS
+  ----------------------------------------------------------- */
+   --transition-fast: 150ms ease;
+   --transition-base: 250ms ease;
+   --transition-slow: 400ms ease;
+}
